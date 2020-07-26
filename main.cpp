@@ -25,7 +25,7 @@ bool isPalindrome(const string& s);
 ///////////
 bool isAnagram(const string s1, const string s2)
 {
-	// variable  dec 
+	// variable  dec
 	int str1;
 	int str2;
 	int count;
@@ -33,13 +33,13 @@ bool isAnagram(const string s1, const string s2)
 
 	bool isAnagram = true;
 
-	// define the size 
+	// define the size
 
 	str1 = s1.size();
 
 	str2 = s2.size();
 
-	// compare both the strings 
+	// compare both the strings
 
 	if (str1 != str2)
 	{
@@ -255,17 +255,17 @@ int main()
 
 void Prog10_01()
 {
-	// declare the variables 
+	// declare the variables
 	string i1;
 
 	string i2;
-	// read the input for string1 and string 2	
+	// read the input for string1 and string 2
 	// display the output
 	cout << "Enter a string s1: " << endl;
 	cin >> i1;
 	cout << "\nEnter a string s2: " << endl;
 	cin >> i2;
-	// invoke the func 
+	// invoke the func
 	isAnagram(i1, i2);
 
 	system("pause");
@@ -302,7 +302,7 @@ void Prog10_04()
 }
 void Prog10_05()
 {
-	// declaring string variable 
+	// declaring string variable
 	string s;
 	cout << "Enter a string: ";
 
@@ -312,7 +312,7 @@ void Prog10_05()
 
 	bool Palindrom = isPalindrome(s);
 
-	//prints if the string is palidrome or not 
+	//prints if the string is palidrome or not
 
 	if (Palindrome)
 	{
@@ -334,7 +334,7 @@ void Prog10_06()
 	cout << "The number of letters in " << s << " is " << countLetters(s) << endl;
 
 }
-void Prog10_07() 
+void Prog10_07()
 {
 	// 's' string is declared
 	std::string s;
@@ -450,7 +450,7 @@ bool isPalindrom(const string& s)
 			Palindrome;
 
 		}
-		
+
 	}
 	return Palindrome;
 
@@ -458,11 +458,11 @@ bool isPalindrom(const string& s)
 void count(std::string &s, int counts[26], int len)
 {
 	int i = 0;
-	//traverse the string from first to last char 
+	//traverse the string from first to last char
 
 	while (s[i] != '\0')
 	{
-		// if chars isupper then converts into lower 
+		// if chars isupper then converts into lower
 
 		if (s[i] >= 'a' && s[i] <= 'z')
 			counts[s[i] - 'a']++;
